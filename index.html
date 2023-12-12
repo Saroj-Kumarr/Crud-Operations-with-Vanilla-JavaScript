@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h3>Saroj <span>Kumar</span></h3>
+
+        <ul>
+          <li>Sign-in</li>
+          <li>Sign-up</li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="buttons">
+        <button id="add">Add</button>
+        <button id="delete">Delete</button>
+        <button id="update">Update</button>
+        <button id="read">Read</button>
+      </div>
+    </section>
+
+    <div id="action">
+      <form id="form">
+        <h3>Enter Student Information</h3>
+        <div>
+          <input
+            id="registration"
+            type="text"
+            placeholder="Enter registration number"
+          />
+        </div>
+        <div>
+          <input id="student-name" type="text" placeholder="Enter your name" />
+        </div>
+        <div>
+          <input id="course" type="text" placeholder="Enter your course" />
+        </div>
+        <div>
+          <input id="cgpa" type="text" placeholder="Enter your cgpa" />
+        </div>
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+
+    <div id="deleteStu">
+      <form>
+        <input id="student-registration" type="text" placeholder="Enter registration to delete" />
+        <button id="ok">ok</button>
+      </form>
+    </div>
+
+    <div id="updateStu">
+      <form>
+        <input id="registration-update" type="text" placeholder="Enter registration to update" />
+        <button id="ok2">ok</button>
+      </form>
+    </div>
+
+
+    <div id="showInfo">
+
+    </div>
+
+    <!-- <footer>
+      <div class="footer">
+        <div>Copyright @ || Saroj Kumar 2023-2024</div>
+      </div>
+    </footer> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

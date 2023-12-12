@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+}
+
+.header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.header ul li {
+  margin: 10px;
+}
+
+.header ul li:first-child {
+  border: 2px solid black;
+  padding: 5px 8px;
+}
+
+.header ul li:last-child {
+  border: 2px solid black;
+  padding: 5px 8px;
+  background-color: black;
+  color: white;
+}
+
+.header h3 {
+  font-size: 30px;
+}
+.header h3 span {
+  color: #0891b2;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container .buttons button {
+  padding: 8px 10px;
+  margin: 10px;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  margin-top: 50px;
+}
+
+#action {
+  display: flex;
+  justify-content: center;
+}
+
+#action form {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+#action form h3 {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+#action form div {
+  display: flex;
+  justify-content: center;
+}
+
+#action form div input {
+  padding: 5px 10px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+#action form button {
+  width: 100%;
+  margin: 10px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+#showInfo {
+  display: flex;
+  justify-content: center;
+}
+
+#showInfo div {
+  text-align: center;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-weight: 700;
+}
+
+#showInfo div p {
+  margin: 5px 10px;
+}
+
+#deleteStu {
+  display: none;
+  justify-content: center;
+}
+
+#deleteStu form input {
+  padding: 5px;
+}
+
+#deleteStu form button {
+  padding: 5px 10px;
+}
+
+#updateStu {
+  display: none;
+  justify-content: center;
+}
+
+#updateStu form input {
+  padding: 5px;
+}
+
+#updateStu form button {
+  padding: 5px 10px;
+}
