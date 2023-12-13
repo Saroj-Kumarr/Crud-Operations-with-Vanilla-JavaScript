@@ -10,35 +10,19 @@ const name = document.getElementById("student-name");
 const course = document.getElementById("course");
 const cgpa = document.getElementById("cgpa");
 const showInfo = document.getElementById("showInfo");
-
 const deleteStu = document.getElementById("deleteStu");
-
 const updateStu = document.getElementById("updateStu");
-
 const deleteReg = document.getElementById("student-registration");
-
 const updateReg = document.getElementById("registration-update");
+const deleteBtn = document.getElementById("deleteBtn");
+const updateBtn = document.getElementById("updateBtn");
 
-const ok = document.getElementById("ok");
-const ok2 = document.getElementById("ok2");
-
-let studentInfo = [
-  {
-    studentRegistration: "12208785",
-    studentName: "saroj",
-    studentCourse: "mca",
-    studentCGPA: "8.10",
-  },
-  {
-    studentRegistration: "12208780",
-    studentName: "saroj",
-    studentCourse: "mca",
-    studentCGPA: "8.15",
-  },
-];
+let studentInfo = [];
 
 Add.addEventListener("click", (event) => {
   event.preventDefault();
+  updateStu.setAttribute("style", "display:none;");
+  deleteStu.setAttribute("style", "display:none;");
   action.setAttribute("style", "display:flex;");
 });
 
@@ -65,7 +49,9 @@ submit.addEventListener("click", (event) => {
 
 const readStudentData = (event) => {
   event.preventDefault();
-
+  action.setAttribute("style", "display:none;");
+  updateStu.setAttribute("style", "display:none;");
+  deleteStu.setAttribute("style", "display:none;");
   showInfo.innerHTML = "";
 
   studentInfo.map((student) => {
@@ -96,10 +82,13 @@ Read.addEventListener("click", readStudentData);
 
 Delete.addEventListener("click", (event) => {
   event.preventDefault();
+  action.setAttribute("style", "display:none;");
+  updateStu.setAttribute("style", "display:none;");
+
   deleteStu.setAttribute("style", "display:flex;");
 });
 
-ok.addEventListener("click", (event) => {
+deleteBtn.addEventListener("click", (event) => {
   event.preventDefault();
 
   const registration = deleteReg.value;
@@ -115,10 +104,13 @@ ok.addEventListener("click", (event) => {
 
 Update.addEventListener("click", (event) => {
   event.preventDefault();
+  action.setAttribute("style", "display:none;");
+  deleteStu.setAttribute("style", "display:none;");
+
   updateStu.setAttribute("style", "display:flex;");
 });
 
-ok2.addEventListener("click", (event) => {
+updateBtn.addEventListener("click", (event) => {
   event.preventDefault();
 
   const registration = updateReg.value;
@@ -138,5 +130,4 @@ ok2.addEventListener("click", (event) => {
   name.value = studentName;
   course.value = studentCourse;
   cgpa.value = studentCGPA;
-  
 });

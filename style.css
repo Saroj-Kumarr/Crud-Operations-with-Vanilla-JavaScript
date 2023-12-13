@@ -4,12 +4,17 @@
   margin: 0;
 }
 
+body {
+  background-color: #c4b5fd;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 10px;
+  background-color: #0d9488;
 }
 
 .header ul {
@@ -18,26 +23,20 @@
 }
 
 .header ul li {
-  margin: 10px;
-}
-
-.header ul li:first-child {
-  border: 2px solid black;
   padding: 5px 8px;
+  background-color: white;
+  color: #0d9488;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 5px;
 }
 
-.header ul li:last-child {
-  border: 2px solid black;
-  padding: 5px 8px;
-  background-color: black;
-  color: white;
-}
-
-.header h3 {
-  font-size: 30px;
+.header img {
+  height:80px;
+  width:150px;
 }
 .header h3 span {
-  color: #0891b2;
+  color: white;
 }
 
 .footer {
@@ -48,6 +47,10 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: #0d9488;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .container {
@@ -59,9 +62,12 @@
   padding: 8px 10px;
   margin: 10px;
   font-weight: 700;
-  background-color: black;
+  background-color: #0d9488;
   color: white;
   margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  outline: none;
 }
 
 #action {
@@ -72,13 +78,29 @@
 #action form {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 20px;
-  border: 2px solid black;
-  padding: 20px;
+  border: 2px solid #0d9488;
+  background-color: #0d9488;
+  color: white;
+}
+
+#action form div input:focus {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+::placeholder {
+  color: #0d9488;
+  font-weight: 700;
 }
 
 #action form h3 {
-  padding: 5px 10px;
   text-align: center;
+  padding: 5px 10px;
+  margin: 5px 10px;
+  font-size: 20px;
 }
 
 #action form div {
@@ -93,11 +115,15 @@
 }
 
 #action form button {
-  width: 100%;
   margin: 10px;
-  padding: 5px;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: #0d9488;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 700;
+  width: 92%;
 }
 
 .show {
@@ -120,10 +146,15 @@
   margin: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-weight: 700;
+  background-color: #0d9488;
+  color: white;
+  border: none;
+  outline: none;
 }
 
 #showInfo div p {
   margin: 5px 10px;
+  padding: 3px;
 }
 
 #deleteStu {
@@ -133,6 +164,9 @@
 
 #deleteStu form input {
   padding: 5px;
+  border: none;
+  outline: none;
+  padding: 5px 25px;
 }
 
 #deleteStu form button {
@@ -145,9 +179,34 @@
 }
 
 #updateStu form input {
-  padding: 5px;
+  outline: none;
+  padding: 5px 25px;
 }
 
 #updateStu form button {
   padding: 5px 10px;
+}
+
+button {
+  padding: 8px 10px;
+  margin: 10px 5px;
+  font-weight: 700;
+  background-color: #0d9488;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 480px) {
+  #showInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  #showInfo div{
+    margin:5px 80px;
+  }
 }
