@@ -199,6 +199,10 @@ button {
 }
 
 @media screen and (max-width: 480px) {
+
+  .header{
+    height:80px;
+  }
   #showInfo {
     display: flex;
     flex-direction: column;
@@ -208,5 +212,10 @@ button {
 
   #showInfo div{
     margin:5px 80px;
+  }
+
+  .footer{
+    font-size: 14px;
+    height:40px;
   }
 }

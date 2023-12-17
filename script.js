@@ -47,6 +47,7 @@ submit.addEventListener("click", (event) => {
   form.reset();
 });
 
+
 const readStudentData = (event) => {
   event.preventDefault();
   action.setAttribute("style", "display:none;");
@@ -110,7 +111,7 @@ Update.addEventListener("click", (event) => {
   updateStu.setAttribute("style", "display:flex;");
 });
 
-updateBtn.addEventListener("click", (event) => {
+ updateBtn.addEventListener("click", (event) => {
   event.preventDefault();
 
   const registration = updateReg.value;
@@ -119,15 +120,31 @@ updateBtn.addEventListener("click", (event) => {
     return obj.studentRegistration == registration;
   });
 
-  console.log(updateStudent);
 
   const { studentCGPA, studentName, studentCourse, studentRegistration } =
     updateStudent[0];
 
+    registration.value = studentRegistration;
+    name.value = studentName;
+    course.value = studentCourse;
+    cgpa.value = studentCGPA;
+
   action.setAttribute("style", "display:flex;");
 
-  registration.value = "12208785";
-  name.value = studentName;
-  course.value = studentCourse;
-  cgpa.value = studentCGPA;
+
+  function removeFirstOccurrenceById(arr, idToRemove) {
+    const indexToRemove = arr.findIndex(obj => obj.studentRegistration === idToRemove);
+  
+    if (indexToRemove !== -1) {
+      arr.splice(indexToRemove, 1);
+    }
+
+    console.log(arr);
+  }
+  
+  removeFirstOccurrenceById(studentInfo,registration );
+
+
+
+
 });
