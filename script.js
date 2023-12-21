@@ -17,6 +17,16 @@ const updateReg = document.getElementById("registration-update");
 const deleteBtn = document.getElementById("deleteBtn");
 const updateBtn = document.getElementById("updateBtn");
 
+
+// const deleteStu = document.getElementById("deleteStu");
+// const updateStu = document.getElementById("updateStu");
+// const deleteReg = document.getElementById("student-registration");
+// const updateReg = document.getElementById("registration-update");
+// const deleteBtn = document.getElementById("deleteBtn");
+// const updateBtn = document.getElementById("updateBtn");
+
+
+
 let studentInfo = [];
 
 Add.addEventListener("click", (event) => {
